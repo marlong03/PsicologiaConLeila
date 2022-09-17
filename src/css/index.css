@@ -37,6 +37,7 @@ html{
     border:2px solid #ffffff;
     box-shadow: 0px 0px 5px gray;
 }
+
 .container__flotante img:hover{
     animation: vibrar .5s ease 2;
 }
