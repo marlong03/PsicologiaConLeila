@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Rubik&display=swap');
+::-webkit-scrollbar {
+    width: 13px;     /* Tamaño del scroll en vertical */
+    height: 8px;    /* Tamaño del scroll en horizontal */
+    /* display: none; */  /* Ocultar scroll */
+}
+::-webkit-scrollbar-thumb {
+    background: rgb(227, 134, 149);
+    border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+   /*  background: #b3b3b3; */
+   /*  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2); */
+}
+::-webkit-scrollbar-track {
+    background: white;
+
+}
+body{
+    overflow-x: hidden;
+}
+
+
+*{
+    font-family: 'Rubik', sans-serif;
+
+}
+input,p{
+    font-family: 'Rubik', sans-serif;
+    font-size: 18px;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Rubik', sans-serif;
+}
+
+input::placeholder, textarea::placeholder{
+    font-family: 'Rubik', sans-serif;
+    font-size: 18px;
+}

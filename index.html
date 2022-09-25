@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/css/imports.css">
     <link rel="shortcut icon" href="./src/imgs/corazonMente.png" type="image/x-icon">
     <link rel="stylesheet" href="./src/css/index.css">
     <title>Psicologia con Leila</title>
@@ -18,7 +19,7 @@
 
         <div>
             <a target="_blank" href="https://wa.me/573046701062">
-                <img src="./src/imgs/redesSociales/whatsappFlotante.png" alt="Whatsapp btn">
+                <img  id="iconWhatsapp" src="./src/imgs/redesSociales/whatsappFlotante.png" alt="Whatsapp btn" >
             </a>
         </div>
     </div>
@@ -31,10 +32,8 @@
         <section>
             <nav class="container__nav">
                 <ul>
-                    <li><img src="./src/imgs/redesSociales/facebook.png" alt=""></li>
                     <li><a target="_blank" href="https://wa.me/573046701062"><img src="./src/imgs/redesSociales/whatsappFlotante.png" alt=""></a></li>
                     <li><a target="_blank" href="https://www.instagram.com/leilacfigueredo/"><img src="./src/imgs/redesSociales/instagram.png" alt=""></a></li>
-                    <li><img src="./src/imgs/redesSociales/linkedin.png" alt=""></li>
                 </ul>
             </nav>
         </section>
@@ -47,83 +46,136 @@
             <div class="container__frase">
                 <h1>¡HOLA SOY LEILA!</h1> <!-- br -->
                 <input type="button" value="Contactame">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis tempora tenetur voluptate sed, in beatae placeat? Officia minima aliquid debitis.</p>
+                <p>Conviertete en esa persona que necesitaste alguna vez</p>
+            </div>
+            <div class="container__video">
+                <div>
+                    <video src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4"  alt ="video" controls></video>
+                </div> 
             </div>
             <div class="container__arrow">
                 <p>❯❯</p>
             </div>
         </section>
-
-
+        <p class="paragraph__cards"> Algunas de las problemáticas más comunes 
+            que tratamos en psicoterapia son:</p>
+        <section class="container__content--cards " >
+            
         <section class="container__cards">
             <div class="card">
                 <section class="card__img">
-                    <img src="./src/imgs/corazonMente.png" alt="">
+                    <img src="./src/imgs/iconosCards/ansiedad.png" alt="">
                 </section>
                 <section class="card__text">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, recusandae!</p>
+                    <p>Ansiedad</p>
                 </section>
             </div>
             <div class="card">
                 <section class="card__img">
-                    <img src="./src/imgs/corazonMente.png" alt="">
+                    <img src="./src/imgs/iconosCards/autoestima.png" alt="">
                 </section>
                 <section class="card__text">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, recusandae!</p>
+                    <p>Autoestima</p>
                 </section>
             </div>
             <div class="card">
                 <section class="card__img">
-                    <img src="./src/imgs/corazonMente.png" alt="">
+                    <img src="./src/imgs/iconosCards/depresion.png" alt="">
                 </section>
                 <section class="card__text">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, recusandae!</p>
+                    <p>Depresión</p>
                 </section>
             </div>
             <div class="card">
                 <section class="card__img">
-                    <img src="./src/imgs/corazonMente.png" alt="">
+                    <img src="./src/imgs/iconosCards/aislamiento.png" alt="">
                 </section>
                 <section class="card__text">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, recusandae!</p>
+                    <p>Aislamiento</p>
                 </section>
             </div>
             
             <div class="card">
                 <section class="card__img">
-                    <img src="./src/imgs/corazonMente.png" alt="">
+                    <img src="./src/imgs/iconosCards/tomadecisiones.png" alt="">
                 </section>
                 <section class="card__text">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, recusandae!</p>
+                    <p>Toma de decisiones</p>
                 </section>
             </div>
             <div class="card">
                 <section class="card__img">
-                    <img src="./src/imgs/corazonMente.png" alt="">
+                    <img src="./src/imgs/iconosCards/adaptacion.png" alt="">
                 </section>
                 <section class="card__text">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, recusandae!</p>
+                    <p>Adaptacion</p>
                 </section>
             </div>
             <div class="card">
                 <section class="card__img">
-                    <img src="./src/imgs/corazonMente.png" alt="">
+                    <img src="./src/imgs/iconosCards/agresivoidad.png" alt="">
                 </section>
                 <section class="card__text">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, recusandae!</p>
+                    <p>Agresividad</p>
                 </section>
             </div>
             <div class="card">
                 <section class="card__img">
-                    <img src="./src/imgs/corazonMente.png" alt="">
+                    <img src="./src/imgs/iconosCards/estres.png" alt="">
                 </section>
                 <section class="card__text">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, recusandae!</p>
+                    <p>Estrés</p>
                 </section>
             </div>
-
-           <div class="oval"></div>
+            <section id="containerCardsSecundary"class="container__cards--secundary displayNone ">
+              <div class="card">
+                <section class="card__img">
+                    <img src="./src/imgs/iconosCards/relacionessociales.png" alt="">
+                </section>
+                <section class="card__text">
+                    <p>Relaciones sociales</p>
+                </section>
+            </div>
+            <div class="card">
+                <section class="card__img">
+                    <img src="./src/imgs/iconosCards/problemasparejas.png" alt="">
+                </section>
+                <section class="card__text">
+                    <p>Problemas de pareja</p>
+                </section>
+            </div>
+            <div class="card">
+                <section class="card__img">
+                    <img src="./src/imgs/iconosCards/problemasfamiliares.png" alt="">
+                </section>
+                <section class="card__text">
+                    <p>Problemas familiares</p>
+                </section>
+            </div>
+            
+            <div class="card">
+                <section class="card__img">
+                    <img src="./src/imgs/iconosCards/sentidovida.png" alt="">
+                </section>
+                <section class="card__text">
+                    <p>Sentido de vida</p>
+                </section>
+            </div>
+            <div class="card">
+                <section class="card__img">
+                    <img src="./src/imgs/iconosCards/separacion.png" alt="">
+                </section>
+                <section class="card__text">
+                    <p>Separaciones de pareja</p>
+                </section>
+            </div>
+           </section>
         </section>
+        <div class="container__btnVerMas">
+            <input type="button" id="btnVerMas" value="Ver más" class="btnVerMas">
+        </div>
+        <div class="oval"></div>
+    </section>
 
 
         <section class="container__personaje">
@@ -133,7 +185,7 @@
                 <img src="./src/imgs/fondo1.jpg" alt="">
             </div>
             <div class="container__text">
-                <h2>Psicologa Clinica</h2>
+                <h2>Psicologa</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus culpa harum ducimus illum dolore enim nemo et quia reprehenderit deserunt doloribus optio distinctio exercitationem, ullam doloremque, nulla rerum. Harum, obcaecati.</p>
             </div>
             <div class="container__personaje--imgs">
@@ -181,5 +233,32 @@
             <button>Enviar</button>
         </section>
     </footer>
+    <div class="atribuciones">
+        <a href="#">Terminos y Condiciones | Derechos de autor</a>
+    </div>
+    <script>
+        const iconWhatsapp = document.getElementById("iconWhatsapp");
+        const btnVerMas = document.getElementById("btnVerMas");
+        const containerCardsSecundary = document.getElementById("containerCardsSecundary");
+        btnVerMas.addEventListener("click",()=>{
+            if(btnVerMas.value == "Ver menos"){
+                containerCardsSecundary.classList.remove("displayFlex")
+                btnVerMas.value="Ver más";
+                console.log("mas");
+            }
+            else if(btnVerMas.value == "Ver más"){
+            containerCardsSecundary.classList.add("displayFlex")
+            btnVerMas.value="Ver menos";
+            console.log("menos");
+            
+            }
+        })
+        setInterval(() => {
+            iconWhatsapp.classList.add("vibrarAhora");
+            setTimeout(() => {
+                iconWhatsapp.classList.remove("vibrarAhora");
+            }, 2000);
+        }, 10000);
+    </script>
 </body>
 </html>
