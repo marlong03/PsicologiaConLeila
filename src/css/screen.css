@@ -1,0 +1,49 @@
+@media (max-width:1000px) {
+    #containerFrase1{
+        display: block;
+    }
+    .container__video video{
+        width: 380px !important;
+    }
+    .banner .container__frase h1{
+        font-size: 40px;
+        text-align: center;
+        margin:0 auto;
+        width: 90%;
+    }
+    .container__frase {
+        min-width: 45%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 90%;
+    }
+    .container__info--banner{
+       margin:0 50px 0 0 !important;
+       justify-content:center;
+    }
+    .container__frase--contactame p{
+        width: 90%;
+    }
+}
+@media (max-width:810px){
+    .container__video {
+        display: none !important;
+    }
+    #btnContactameBanner{
+        display: none !important;
+    }
+    #btnConocemeBanner{
+        display: block !important;
+    }
+    .container__info--banner{
+        margin:0 0 0 0 !important;
+        justify-content:center;
+       /*  width: 600px !important; */
+     }
+     .container__frase--contactame p {
+        width: 100% !important;
+     }
+
+
+}
