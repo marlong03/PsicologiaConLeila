@@ -5,19 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./src/imgs/corazonMente.png" type="image/x-icon">
+   <!--  <link rel="stylesheet" href="src/css/sweetalert2.min.css"> -->
     <link rel="stylesheet" href="./src/css/screen.css">
     <link rel="stylesheet" href="src/css/imports.css">
     <link rel="stylesheet" href="src/css/index.css">
     <title>Psicologia con Leila</title>
 </head>
 <body>
-
     <!-- FLOTANTE -->
     <div class="container__flotante">
        <!--  <div>
             <p>¡Hola! ¿En que te puedo ayudar?</p>
         </div> -->
-
         <div>
             <a target="_blank" href="https://wa.me/573046701062">
                 <img  id="iconWhatsapp" src="./src/imgs/redesSociales/whatsappFlotante.png" alt="Whatsapp btn" >
@@ -265,10 +264,17 @@
     <footer>
         <section class="formulario">
             <h2>Consulta conmigo</h2> <!-- rapida -->
-            <input type="text" placeholder="Email">
-            <input type="text" placeholder="Telefono">
-           <textarea name="" id="" placeholder="Mensaje" ></textarea>
-            <button>Enviar</button>
+            <form action="https://formsubmit.co/marlongyes@gmail.com" method="POST">
+                <input type="email" name="correo electronico" placeholder="Email" required>
+                <input type="tel" name="telefono"placeholder="Telefono" required>
+                <textarea name="mensaje" id="" placeholder="Mensaje" required ></textarea>
+                <!-- <button type="submit">Enviar</button> -->
+                <input type="submit" value="Enviar">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_next" value="http://127.0.0.1:5501/">
+                <input type="hidden" name="_subject" value="¡Nuevo envío!">
+                <input type="hidden" name="_template" value="table">
+            </form><input type="hidden" name="_autoresponse" value="your custom message">
         </section>
     </footer>
     <div class="atribuciones">
@@ -308,6 +314,14 @@ var span = document.getElementsByClassName("close")[0];
 
 btn.onclick = function() {
   modal.style.display = "flex";
+/*   Swal.fire({
+  title: 'Sweet!',
+  text: 'Modal with a custom image.',
+  imageUrl: 'https://unsplash.it/400/200',
+  imageWidth: 400,
+  imageHeight: 200,
+  imageAlt: 'Custom image',
+}) */
 }
 span.onclick = function() {
   modal.style.display = "none";
@@ -317,6 +331,16 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
+/* Swal.fire({
+  title: 'Sweet!',
+  text: 'Modal with a custom image.',
+  imageUrl: 'https://unsplash.it/400/200',
+  imageWidth: 400,
+  imageHeight: 200,
+  imageAlt: 'Custom image',
+}) */
     </script>
+   <!--  <script src="src/js/sweetalert2.all.min.js"></script> -->
+
 </body>
 </html>
