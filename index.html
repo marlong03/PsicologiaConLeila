@@ -42,16 +42,37 @@
 
 
     <main>
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+          <!-- Modal content -->
+          <div class="modal-content">
+            <div class="container__close">
+
+                <span class="close">&times;</span>
+            </div>
+            <div class="container__video--modal">
+                <div>
+                    <video src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4"  alt ="video" controls></video>
+                </div> 
+               <!--  <div id="containerFrase2" class="container__frase--contactame">
+                    <div class="container__btn--contactame">
+                        <a target="_blank"href="https://wa.me/573046701062"><input type="button" value="Contactame"></a>
+                     </div>
+                     <p>Conviertete en esa persona que necesitaste alguna vez</p>
+                 </div> -->
+            </div>
+          </div>
+        </div>
 
         <section class="banner">
             <div class="container__info--banner">
-                <div class="container__frase">
+                <div class="container__frase " >
                     <h1>¡HOLA SOY LEILA!</h1> <!-- br -->
                     <div id="containerFrase1" class="container__frase--contactame">
                         <div class="container__btn--contactame">
                             <a id="btnContactameBanner" target="_blank"href="https://wa.me/573046701062"><input type="button" value="Contactame"></a>
                             
-                           <button id="btnConocemeBanner"> Reproducir video <img width="30px"src="./src/imgs/video.png" alt=""></button>
+                           <button id="btnConocemeBanner" > Reproducir video <img width="30px"src="./src/imgs/video.png" alt=""></button>
                         </div>
                          <p>Conviertete en esa persona que necesitaste alguna vez</p>
                      </div>
@@ -276,6 +297,26 @@
                 iconWhatsapp.classList.remove("vibrarAhora");
             }, 2000);
         }, 10000);
+
+
+
+
+        // Get the modal
+var modal = document.getElementById("myModal");
+var btn = document.getElementById("btnConocemeBanner");
+var span = document.getElementsByClassName("close")[0];
+
+btn.onclick = function() {
+  modal.style.display = "flex";
+}
+span.onclick = function() {
+  modal.style.display = "none";
+}
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
     </script>
 </body>
 </html>

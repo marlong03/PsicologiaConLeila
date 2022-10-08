@@ -27,7 +27,7 @@ body{
 }
 input,p{
     font-family: 'Rubik', sans-serif;
-    font-size: 16px;
+    font-size: 15px;
 }
 h1,h2,h3,h4,h5,h6{
     font-family: 'Rubik', sans-serif;
@@ -35,5 +35,71 @@ h1,h2,h3,h4,h5,h6{
 
 input::placeholder, textarea::placeholder{
     font-family: 'Rubik', sans-serif;
-    font-size: 16px;
+    font-size: 15px;
 }
+
+/* MODAL */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 100; /* Sit on top */
+    left: 0;
+    top: 0;
+    /* bottom: 0;
+    right: 0; */
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow:auto; /* Enable scroll if needed */
+    background-color: #d4d4d4a9; /* Black w/ opacity */
+   /*  display: flex; */
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: black;
+    margin: 15px auto; /* 15% from the top and centered */
+    padding: 0 10px 10px 10px;
+    border: 5px solid #434343;
+    width: 90%; /* Could be more or less, depending on screen size */
+    border-radius: 10px;
+    /* margin-top: 15vh;
+    margin-bottom: 15vh; */
+  }
+  .container__close{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #e38695;
+    /* float: right; */
+    font-size: 38px;
+    font-weight: bold;
+    margin: 0 10px 0 0 ;
+
+
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #ffffff;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .container__video--modal{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   /*  padding: 50px 0 0 0 ; */
+  }
+  .container__video--modal video {
+    width: 100%;
+    margin:0 !important;
+    border-radius: 10px;
+
+  }
