@@ -289,6 +289,14 @@ header .container__nav ul li:hover{
     border-bottom-right-radius: 10px;
     color:white;
     text-align: center;
+    font-size: 20px ;
+    letter-spacing: 1.5px;
+    /* height: 100%; */
+    max-height: 70px;
+    min-height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .displayNone{
     display: none;
@@ -328,16 +336,27 @@ header .container__nav ul li:hover{
 .container__personaje .container__img{
     background-color: white;    
     border-radius: 10px;
-    border:3px solid #e8e8e8;
+    border:4px solid #f4f4f4;
     margin:20px;
     padding:20px;
     z-index: 2;
-    box-shadow: 0px 0px 10px gray;
+    box-shadow: 0px 0px 10px #adadad;
+
 }
-.container__personaje .container__img img{
+/* 
+ */
+.container__personaje .container__img .img__perfil{
+    background:url(../imgs/fotoPerfil.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-position:0 40px; */
+    background-position: -85px 0;
+    object-fit: cover;
+    background-size: cover;
     width: 250px;
-    height: 250px;
-    border-radius: 100%;
+    min-height: 250px;
+    border-radius: 1000px;
+    background-repeat: none;
 }
 .container__personaje .container__text{
     width: 45%;
@@ -349,10 +368,11 @@ header .container__nav ul li:hover{
     margin:20px 0;
     border-bottom: 3px solid var(--pink);
     padding:10px 0;
-    font-size: 30px;
+    font-size: 35px;
 }
 .container__personaje .container__text p{
-    line-height: 22px;
+    line-height: 25px;
+    font-size: 18px;
 }
 .container__personaje .oval{
     width: 80vw;
@@ -371,7 +391,7 @@ header .container__nav ul li:hover{
 .container__personaje--imgs{
     display: flex;
     justify-content: center;
-    padding:20px 0;
+    padding:50px 0;
     flex-wrap: wrap;
 }
 .container__personaje--imgs .card{
