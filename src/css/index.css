@@ -1,5 +1,6 @@
 :root{
     /* #d7495c */
+    /* #f57788 */
     --pink: #f57788;
 }
 *{
@@ -34,7 +35,7 @@ html{
     margin:30px 30px 30px 10px;
     cursor: pointer;
     border:3px solid #ffffff;
-    box-shadow: 0px 0px 5px gray;
+    box-shadow: 0px 0px 10px #9b9b9b;
 }
 .vibrarAhora{
     animation: vibrar .5s ease 2;
@@ -179,7 +180,7 @@ header .container__nav ul li:hover{
 .container__frase h1{
     font-size: 50px;
     color:var(--pink);
-    text-shadow: 4px 2px 5px #56565669;
+    text-shadow: 4px 2px 5px #6c6c6c69;
     font-family: 'Fuzzy Bubbles', cursive;
 }
 .container__frase--contactame input{
@@ -286,7 +287,7 @@ header .container__nav ul li:hover{
 .card{
     position: relative;
     z-index: 2;
-    box-shadow: 1px 1px 7px gray;
+    box-shadow: 1px 1px 10px #bababa;
     width: 200px;
     border-radius: 10px;
     margin:15px 40px ;
@@ -340,6 +341,7 @@ header .container__nav ul li:hover{
     border-radius: 10px;
     position: relative;
     z-index: 10;
+    font-size: 16px;
 }
 .btnVerMas:hover{
     background-color: var(--pink);
@@ -362,7 +364,7 @@ header .container__nav ul li:hover{
     margin:20px;
     padding:20px;
     z-index: 2;
-    box-shadow: 0px 0px 10px #adadad;
+    box-shadow: 0px 0px 10px #bababa;
 
 }
 /* 
@@ -390,7 +392,8 @@ header .container__nav ul li:hover{
     margin:20px 0;
     border-bottom: 3px solid var(--pink);
     padding:10px 0;
-    font-size: 35px;
+    font-size: 32px;
+    letter-spacing: 1px;
     font-family: 'Fuzzy Bubbles', cursive;
 }
 .container__personaje .container__text p{
@@ -459,6 +462,7 @@ header .container__nav ul li:hover{
     font-family: 'Fuzzy Bubbles', cursive;
     padding-bottom: 5px;
     letter-spacing: 2px;
+    font-size: 30px;
 
 }
 .section__instagram .container__title {
@@ -473,7 +477,7 @@ header .container__nav ul li:hover{
     /* width: 50px !important; */
     margin: 10px 20px;
     /* background-color: #2d2d2d; */
-    box-shadow: 0px 0px 10px #cfcfcf;
+    box-shadow: 5px 5px 10px #d6d6d6;
     background-color: var(--pink);
     border-bottom: 4px solid white;
     border-radius: 10px;
@@ -484,7 +488,7 @@ header .container__nav ul li:hover{
 .container__consultas{
     width: 80%;
     margin:20px auto 70px;
-    box-shadow: 0px 0px 10px gray;
+    box-shadow: 0px 0px 10px #bababa;
    border:4px solid white;
     padding:40px 40px;
     border-radius: 10px;
@@ -494,7 +498,40 @@ header .container__nav ul li:hover{
     color:var(--pink);
     text-align: center;
     margin: 0 0 20px 0;
+    font-family: 'Fuzzy Bubbles', cursive;
 }
+.section__text--important{
+    background-color: #fff;
+    font-size: 18px;
+    border-left: 17px solid var(--pink);
+    border-bottom-left-radius: 0px;
+    border-top-left-radius: 0px;
+    
+}
+.section__text--important p{
+    line-height: 25px;
+
+}
+.section__text--important h2{
+    color:black !important;
+}
+.section__text--important .consultas_sections div:first-child{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section__text--important img{
+    width: 100%;
+    max-width: 350px;
+}
+.section__text--important .content__text .container__emojis{
+    width: 100%;
+}
+/* .section__text--important .content__text{
+    display: flex;
+    justify-content: center;
+    al
+} */
 .consultas_sections div h2{
     padding:5px 0;
     margin:5px 0;
