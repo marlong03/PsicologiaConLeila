@@ -35,7 +35,18 @@
     }
 }
 @media (max-width:836px){
-    
+    .section__text--important{
+        border-left: 0px solid transparent !important;
+        border-bottom: 17px solid var(--pink) !important;
+        border-bottom-left-radius: 10px !important;
+        border-top-left-radius: 10px !important;
+        border-bottom-right-radius: 0px !important;
+
+        
+    }
+    /* .container__consultas{
+        width: 87% !important;
+    } */
     header section{
         margin:20px 30px !important;
     }
@@ -43,7 +54,7 @@
         width: 60px !important;
     }
     header .container__nav ul li img{
-        width: 40px !important;
+        width: 50px !important;
         cursor: pointer;
         border:2px solid white;
         border-radius: 100%;
