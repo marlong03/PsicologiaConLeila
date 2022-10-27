@@ -22,9 +22,6 @@
        margin:0 50px 0 0 !important;
        justify-content:center;
     }
-    .container__frase--contactame p{
-      /*   width: 90%; */
-    }
     .paragraph__cards{
         margin: 30px auto 0 !important;
         width: 80% !important;
@@ -41,12 +38,7 @@
         border-bottom-left-radius: 10px !important;
         border-top-left-radius: 10px !important;
         border-bottom-right-radius: 0px !important;
-
-        
     }
-    /* .container__consultas{
-        width: 87% !important;
-    } */
     header section{
         margin:20px 30px !important;
     }
@@ -164,25 +156,6 @@
     .consultas_sections div{
         margin:0 !important;
     }
-    /* .container__personaje{
-        padding-bottom: 0 !important;
-    }
-    .container__personaje .container__text{
-        width: 95% !important;
-        position: relative;
-        z-index: 2;
-        margin:0 15px!important;
-    }
-    .container__personaje--imgs{
-        padding:10px 0 !important;
-    }
-    .card{
-        width: 80% !important;
-        margin:15px 40px ;
-    }
-    .container__cards{
-         margin:0 !important;
-     } */
 }
 @media (max-width:660px) {
     .card{
