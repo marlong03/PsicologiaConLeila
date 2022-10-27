@@ -626,6 +626,6 @@ footer .formulario button:hover{
     font-size: 14px !important;
 }
 .atribuciones a{
-    color:white;
+    color:white !important;
     font-size: 14px !important;
 }
